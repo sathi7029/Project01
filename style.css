@@ -36,6 +36,7 @@
   font-size: medium;
   font-weight: bolder;
   color: whitesmoke;
+  text-align: justify;
 }
 
 .mainImg {
@@ -91,4 +92,82 @@
 
 .pl {
   margin-bottom: 10px;
+}
+
+/*Tablet responsiveness*/
+
+@media screen and (max-width: 768px) {
+  .middle {
+    height: 500px;
+  }
+
+  .mainImg {
+    height: 500px;
+  }
+
+  .quotes {
+    width: 25vw;
+  }
+
+  .achievements {
+    height: 340px;
+  }
+  .lists {
+    width: 70vw;
+    text-align: justify;
+  }
+
+  .personalLife {
+    height: 950px;
+  }
+
+  .pl {
+    margin-bottom: 20px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foot {
+    font-size: medium;
+  }
+}
+
+/*Mobile Responsiveness*/
+@media screen and (max-width: 480px) {
+  .heading {
+    height: 50px;
+  }
+  .nav-bar {
+    font-size: smaller;
+  }
+
+  .mainImg {
+    height: 300px;
+  }
+  .middle {
+    height: 850px;
+    flex-direction: column;
+  }
+  .quotes {
+    width: 80vw;
+    text-align: justify;
+  }
+
+  .achievements {
+    height: 470px;
+  }
+  .list {
+    text-align: justify;
+  }
+  .head-ach {
+    margin-top: 10px;
+  }
+
+  .personalLife {
+    height: 1800px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
